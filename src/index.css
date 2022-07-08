@@ -1,13 +1,99 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --bg-nav: hsla(233, 12%, 15%, 1);
+  --bg-main: hsla(217, 14%, 18%, 1);
+  --clr-white: hsla(0, 0%, 100%, 1);
+  --clr-neutral: hsla(210, 65%, 92%, 1);
+  --clr-accent: hsla(193, 95%, 68%, 1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: var(--clr-white);
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* || typography ============================================ */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--clr-accent);
+  font-size: 22px;
+  line-height: 1.2;
+  margin-right: auto;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--clr-neutral);
+}
+
+/* || navigation ============================================== */
+.logo {
+  width: 30px;
+  margin-right: 0.5rem;
+}
+
+nav {
+  background-color: var(--bg-nav);
+  padding-block: 1em;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  color: var(--clr-light);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-block: 1em;
+}
+
+/* || main ==================================================== */
+main {
+  background-color: var(--bg-main);
+  background-image: url("../src/images/react-icon-dark.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-top: 2em;
+  height: calc(100vh - 91px);
+  color: var(--clr-white);
+}
+
+ul {
+  padding-left: 4rem;
+}
+
+ul li {
+  margin-block: 1rem;
+}
+
+::marker {
+  color: var(--clr-accent);
+  font-size: 1.5rem;
 }
