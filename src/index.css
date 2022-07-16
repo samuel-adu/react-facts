@@ -18,6 +18,15 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.app {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .container {
@@ -80,8 +89,7 @@ main {
   background-image: url("../src/images/react-icon-dark.png");
   background-repeat: no-repeat;
   background-position: right center;
-  padding-top: 2em;
-  height: calc(100vh - 91px);
+  padding-block: 2em;
   color: var(--clr-white);
 }
 
@@ -96,4 +104,11 @@ ul li {
 ::marker {
   color: var(--clr-accent);
   font-size: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  .app {
+    width: 550px;
+    height: 500px;
+  }
 }
