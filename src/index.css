@@ -17,22 +17,12 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: var(--clr-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.app {
-  width: 90%;
-  margin: 0 auto;
 }
 
 .container {
   width: 90%;
-  max-width: 1300px;
-  margin-inline: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 img {
@@ -91,6 +81,7 @@ main {
   background-position: right center;
   padding-block: 2em;
   color: var(--clr-white);
+  height: calc(100vh - 80px);
 }
 
 ul {
@@ -104,11 +95,4 @@ ul li {
 ::marker {
   color: var(--clr-accent);
   font-size: 1.5rem;
-}
-
-@media (min-width: 550px) {
-  .app {
-    width: 550px;
-    height: 500px;
-  }
 }
